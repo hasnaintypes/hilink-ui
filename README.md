@@ -1,60 +1,108 @@
-# Hilink - Explore the World with Ease
+# Hilink UI
 
-## 🌍 About Hilink
+A modern travel and outdoor adventure landing page built with Next.js and Tailwind CSS. Designed as a clean, responsive UI template for travel web applications.
 
-Hilink is a modern travel website designed to provide a visually stunning and user-friendly interface for travelers. Built using Tailwind CSS, Hilink offers a seamless UI experience for exploring destinations.
+## Preview
 
-## 🚀 Features
+The landing page includes the following sections:
 
-- **Beautiful UI Design** – Aesthetic and responsive layouts.
-- **Interactive Elements** – Engaging UI components built with Tailwind CSS.
-- **Dark & Light Modes** – Theme switcher for better accessibility.
-- **Fully Responsive** – Optimized for all screen sizes.
-- **Minimalistic & Fast** – Clean code and fast performance.
+- **Hero** -- Headline with star ratings, CTA buttons, and a location info card
+- **Camp** -- Horizontally scrollable camp site cards with background images and avatar groups
+- **Guide** -- Trail navigation showcase with a floating destination progress card
+- **Features** -- Grid layout highlighting offline maps, scheduling, AR trails, and new destinations
+- **Get App** -- Download call-to-action with App Store and Google Play buttons
+- **Footer** -- Site links, contact info, and social media icons
 
-## 🛠️ Tech Stack
+## Tech Stack
 
-- **Frontend:** Next.js, React.js, Tailwind CSS
-- **Styling:** Tailwind CSS utility-first framework
+| Layer   | Technology        |
+| ------- | ----------------- |
+| Framework | Next.js 15      |
+| UI        | React 19        |
+| Styling   | Tailwind CSS 3  |
+| Language  | JavaScript (JSX) |
 
-## 📦 Installation & Setup
+## Project Structure
 
-To run the project locally, follow these steps:
-
-### 1️⃣ Clone the Repository
-
-```sh
-git clone https://github.com/Nainee99/travel-website.git
-cd travel-website
+```
+hilink-ui/
+  app/
+    favicon.ico
+    globals.css          # Tailwind directives and custom utility classes
+    layout.js            # Root layout with Navbar and Footer
+    page.js              # Home page composing all sections
+  components/
+    Button.jsx           # Reusable button with icon support
+    Camp.jsx             # Camp sites section with horizontal scroll
+    Features.jsx         # Feature grid with icons
+    Footer.jsx           # Footer with links, contact, and socials
+    GetApp.jsx           # App download CTA section
+    Guide.jsx            # Trail guide section with progress card
+    Hero.jsx             # Hero section with CTA and location card
+    Navbar.jsx           # Navigation bar with responsive menu
+  constant/
+    index.js             # All static data (nav links, features, footer, socials)
+  public/
+    hilink-logo.svg      # Brand logo
+    icons/               # SVG icons (UI, social, platform)
+    images/              # PNG images (backgrounds, avatars, photos)
+  tailwind.config.mjs    # Custom colors, backgrounds, breakpoints
+  postcss.config.mjs     # PostCSS configuration
+  next.config.mjs        # Next.js configuration
+  package.json
 ```
 
-### 2️⃣ Install Dependencies
+## Getting Started
 
-```sh
+### Prerequisites
+
+- Node.js 18.17 or later
+- npm, yarn, or pnpm
+
+### Installation
+
+```bash
+git clone <repository-url>
+cd hilink-ui
 npm install
 ```
 
-### 3️⃣ Run the Development Server
+### Development
 
-```sh
+```bash
 npm run dev
 ```
 
-The website should now be available at `http://localhost:3000`.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-## 🔥 Upcoming Features
+### Production Build
 
-- **Animations & Transitions** – Smooth interactions using Tailwind CSS.
-- **More UI Components** – Expanding the design elements.
+```bash
+npm run build
+npm start
+```
 
-## 🤝 Contributing
+## Customization
 
-We welcome contributions! Feel free to fork the repo and submit a pull request.
+All static text content is centralized in `constant/index.js`. Update the following exports to match your brand:
 
-## 📜 License
+- `NAV_LINKS` -- Navigation menu items
+- `FEATURES` -- Feature section titles, icons, and descriptions
+- `FOOTER_LINKS` -- Footer link columns
+- `FOOTER_CONTACT_INFO` -- Phone and email
+- `SOCIALS` -- Social media icon paths
 
-This project is licensed under the MIT License.
+Background images and color themes are configured in `tailwind.config.mjs` under the `extend` section.
 
----
+## Available Scripts
 
-Enjoy the UI experience! 🎨✨
+| Command         | Description                    |
+| --------------- | ------------------------------ |
+| `npm run dev`   | Start development server       |
+| `npm run build` | Create production build         |
+| `npm start`     | Serve production build          |
+| `npm run lint`  | Run ESLint checks               |
+
+## License
+
+This project is open source and available under the [MIT License](LICENSE).
