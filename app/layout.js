@@ -5,7 +5,7 @@ import Footer from "@/components/Footer";
 export const metadata = {
   title: "Hilink - Explore the World with Ease",
   description:
-    "Hilink is your ultimate travel companion, helping you discover and explore amazing destinations effortlessly.",
+    "Hilink is your all-in-one travel companion for hiking, camping, and outdoor exploration. Discover trails, plan adventures, and navigate with confidence.",
 };
 
 export default function RootLayout({ children }) {
