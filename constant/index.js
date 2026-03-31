@@ -1,49 +1,49 @@
 // NAVIGATION
 export const NAV_LINKS = [
   { href: "/", key: "home", label: "Home" },
-  { href: "/", key: "how_hilink_work", label: "How Hilink Work?" },
+  { href: "/", key: "how_it_works", label: "How It Works" },
   { href: "/", key: "services", label: "Services" },
-  { href: "/", key: "pricing ", label: "Pricing " },
+  { href: "/", key: "pricing", label: "Pricing" },
   { href: "/", key: "contact_us", label: "Contact Us" },
 ];
 
 // CAMP SECTION
 export const PEOPLE_URL = [
-  "/person-1.png",
-  "/person-2.png",
-  "/person-3.png",
-  "/person-4.png",
+  "/images/person-1.png",
+  "/images/person-2.png",
+  "/images/person-3.png",
+  "/images/person-4.png",
 ];
 
 // FEATURES SECTION
 export const FEATURES = [
   {
-    title: "Real maps can be offline",
-    icon: "/map.svg",
+    title: "Offline Maps",
+    icon: "/icons/map.svg",
     variant: "green",
     description:
-      "We provide a solution for you to be able to use our application when climbing, yes offline maps you can use at any time there is no signal at the location",
+      "Access detailed trail maps without an internet connection. Navigate confidently through remote areas where cellular coverage is unavailable.",
   },
   {
-    title: "Set an adventure schedule",
-    icon: "/calendar.svg",
+    title: "Adventure Scheduling",
+    icon: "/icons/calendar.svg",
     variant: "green",
     description:
-      "Schedule an adventure with friends. On holidays, there are many interesting offers from Hilink. That way, there's no more discussion",
+      "Plan and coordinate trips with your group effortlessly. Set dates, share itineraries, and take advantage of seasonal offers all in one place.",
   },
   {
-    title: "Technology using augment reality",
-    icon: "/tech.svg",
+    title: "Augmented Reality Trails",
+    icon: "/icons/tech.svg",
     variant: "green",
     description:
-      "Technology uses augmented reality as a guide to your hiking trail in the forest to the top of the mountain. Already supported by the latest technology without an internet connection",
+      "Follow AR-guided trail markers from the forest floor to the summit. Powered by cutting-edge technology that works entirely offline.",
   },
   {
-    title: "Many new locations every month",
-    icon: "/location.svg",
+    title: "New Destinations Monthly",
+    icon: "/icons/location.svg",
     variant: "orange",
     description:
-      "Lots of new locations every month, because we have a worldwide community of climbers who share their best experiences with climbing",
+      "Discover fresh locations added every month by our global community of explorers sharing their top hiking and camping experiences.",
   },
 ];
 
@@ -55,32 +55,36 @@ export const FOOTER_LINKS = [
       "About Hilink",
       "Press Releases",
       "Environment",
-      "Jobs",
+      "Careers",
       "Privacy Policy",
       "Contact Us",
     ],
   },
   {
     title: "Our Community",
-    links: ["Climbing xixixi", "Hiking hilink", "Hilink kinthill"],
+    links: [
+      "Summit Seekers Club",
+      "Hilink Trail Explorers",
+      "Wilderness Wanderers",
+    ],
   },
 ];
 
 export const FOOTER_CONTACT_INFO = {
   title: "Contact Us",
   links: [
-    { label: "Admin Officer", value: "123-456-7890" },
-    { label: "Email Officer", value: "hilink@akinthil.com" },
+    { label: "Phone", value: "+1 (555) 123-4567" },
+    { label: "Email", value: "hello@hilink.com" },
   ],
 };
 
 export const SOCIALS = {
   title: "Social",
   links: [
-    "/facebook.svg",
-    "/instagram.svg",
-    "/twitter.svg",
-    "/youtube.svg",
-    "/wordpress.svg",
+    "/icons/facebook.svg",
+    "/icons/instagram.svg",
+    "/icons/twitter.svg",
+    "/icons/youtube.svg",
+    "/icons/wordpress.svg",
   ],
 };
