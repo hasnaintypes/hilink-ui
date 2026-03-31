@@ -26,13 +26,13 @@ const Navbar = () => {
         <Button
           type="button"
           title="Login"
-          icon="/user.svg"
+          icon="/icons/user.svg"
           variant="btn_dark_green"
         />
       </div>
 
       <Image
-        src="menu.svg"
+        src="/icons/menu.svg"
         alt="menu"
         width={32}
         height={32}
